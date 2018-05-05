@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("image/bg.jpeg");
+}
+
+.header {
+
+    background-color:rgba(120, 120, 120, 0.5);
+    padding: 20px;
+    text-align: left;
+    color :white;
+}
+.header img{
+    float: left;
+    margin-top: -10px;
+    margin-right: 15px;
+    height: 104px;
+    width: 104px;
+    cursor: pointer;
+}
+.header button{
+    float: right;
+    margin-top: 25px; 
+    margin-right: 10px;
+    width: auto;
+    background-color:rgb(120, 120, 120);
+
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 2px;
+    color: white;
+}
+.login:before{
+    content: "\f008";
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(120, 120, 120, 0.8);
+
+}
+
+.topnav a {
+    float: left;
+    /*display: block;*/
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px ;
+    text-decoration: none;
+    border-right: 3px solid rgb(120, 120, 120);
+    width: 300px;
+
+}
+.topnav a .menu{
+    background-color: rgba(120, 120, 120, 0.0);
+    font-size: 20px;
+    color: #f2f2f2;
+    border: none;
+    margin-left: -5.5%;
+    width: 299px;
+    margin-bottom: -100%;
+    cursor: pointer;
+}
+
+.topnav a button:focus {
+    background-color: rgb(128, 128, 128);
+    color: white;
+}
+
+.Slide{
+    position: relative;
+    width: 50%;
+    height: 341px;
+    margin:auto;
+}
+
+.imageSlides{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.btn-slide{
+    position:absolute;
+    top:50%;
+    
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    color: white;      
+}
+.left{
+    left:0%;
+}
+.right{
+    right: 0%;
+}
+.btn-slide:hover{
+    
+    background-color: rgba(0,0,0,0.8);     
+}
+
+
+.promo{
+    padding-left: 17%;
+    margin-bottom: 5%;
+}
+.promo img{
+    margin-right: 5%;
+    width: 35%;
+}
+
+
+
+
+
+.footer {
+    background-color: rgba(120, 120, 120, 0.5);
+    margin-bottom: 0;
+    /*bottom: 1px;*/
+    text-align: center;
+    color: white;
+
+
+}
+.footer:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.keterangan{
+    float: left;
+    padding: 10px;
+    padding-left: 50px;
+
+}
+.keterangan ul{
+    list-style: none;
+}
+.keterangan ul a{
+    text-decoration: none;
+    color: white;
+}
+.footer .keterangan.tentang{
+    width: 60%;
+
+}
+.footer .keterangan.kontak{
+    width: 50%;
+}
+.bot{
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(120, 120, 120, 0.8);
+    text-align: center;
+    border-top: 3px solid white;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    
+
+}
+.bot a{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 3px solid rgb(120, 120, 120);
+    width: 200px; 
+}
+.bot .akhir{
+
+    border-right: none;
+
+}
+.utama{
+
+    overflow-y: auto;
+}
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 25px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+#btn-pesan {
+  /*display: none;*/
+  bottom: 0px;
+  right: 0px;
+  background-color: red;
+    color: white;
+    border: 1px solid red;
+    width: 120px;
+    height: 35px; 
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+

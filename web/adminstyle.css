@@ -1,0 +1,259 @@
+
+
+
+/*.top .kolom{
+    background-color: #f1f1f1;
+    float: left;
+    padding: 50px;
+   
+    
+}
+.top .kolom.logo{
+    width : 60%;
+    
+}
+.top .kolom.info{
+    
+    width :30%;
+}
+.top .kolom.keluar{
+    
+    width : 10%;
+    
+    
+     
+}
+
+
+.top .kolom.logo img,.kolom.info img{
+    float: left;
+    margin-top: -15px;
+    margin-right: 15px;
+    height: 104px;
+    width: 104px;
+}
+
+.top .kolom.info h1{
+    margin-left: 200px;
+    margin-top: -20px;
+}
+
+.top{
+     
+    padding: 20px;
+    text-align: left;
+}*/
+
+.column {
+    float: left;
+    /*padding: 10px;*/
+}
+.column img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    height: 104px;
+    width: 104px;
+}
+.column button{
+    float: left;
+    margin-top: 50px;
+    margin-right: 15px;
+
+}
+
+/* Left and right column */
+.column.side {
+    width: 15%;
+}
+
+/* Middle column */
+.column.middle {
+    margin-left: 40%;
+    width: 30%;
+}
+.column.end {
+    width: 15%;
+
+}
+.column.end a button {
+    float: right;
+    width: auto;
+    background-color:rgb(120, 120, 120);
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 2px;
+    color: white;
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    background-color: rgba(120, 120, 120, 0.5);
+    color: white;
+}
+
+.columnmain {
+    float: left;
+    padding: 10px;
+
+}
+
+/* Left and right column */
+.columnmain.side {
+    width: 25%;
+
+}
+
+/* Middle column */
+.columnmain.middle {
+    width: 75%;
+    border-left:  2px solid white   ;
+}
+
+/* Clear floats after the columns */
+.rowmain:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.data{
+    border: 1px solid black;
+}
+.data input[type=text]{
+    border-color: silver;
+}
+.data button{
+    width: 30%;
+}
+.data input[type=text]:focus{
+    border-color: cyan;
+}
+.columnmain.middle ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.columnmain.middle li {
+    float: left;
+}
+
+.columnmain.middle li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+table{
+    margin: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    border-color: black;
+    border-width: 2px;
+}
+.columnmain.side a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.columnmain.side a:hover{
+    color: yellow;
+}
+
+.rowmenu {
+    color: white;
+    margin-left: 7%;
+    margin-bottom: 5%; 
+    
+}
+.rowmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnmenu {
+    float: left;
+    padding: 10px;
+    background-color: rgba(120,120,120,0.5);
+    margin: 10px;
+    
+    width: 528.65px;
+    border-radius: 5px; 
+
+}
+.columnmenu:hover {
+    
+    background-color: rgba(120,120,120,0.8);
+    
+    
+
+}
+
+.columnmenu.side{
+    width: 60%;   
+     background-color: rgba(120,120,120,0);
+}
+.columnmenu.side2{
+    width: 20%;
+    background-color:rgba(120,120,120,0) ;
+}
+.columnmenu.side2 button{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    width: 120px;
+    height: 35px; 
+    font-weight: bold;
+    border-radius: 8px;
+}
+.columnmenu.side2 button:hover{
+    background-color: wheat;
+    border: 1px solid wheat;
+    color: black;
+}
+.columnmenu h3{
+    text-align: center;     
+}
+.columnmenu button{
+    margin-top: -25%;
+    margin-left: 38%;     
+}
+ aside{
+    width: 8.5%;
+    right: 0;
+    margin-left: 95%;
+    margin-top: -7.5%;
+    -webkit-transform: rotate(45deg);
+    -khtml-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+   
+}
+
+
+.promo-makanan{
+    margin-top: -2%;
+    margin-right: -2%;
+     border-left:50px solid transparent;
+     border-bottom:50px solid transparent;
+     /*border-top:50px solid red;*/
+     border-right:50px solid red;
+}
+
+
+
