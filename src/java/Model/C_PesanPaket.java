@@ -94,40 +94,40 @@ public class C_PesanPaket {
         }
     }
 
-    public static void updateSpot(spotWisata spot) {
-        Connection conn = null;
-        PreparedStatement ps = null;
-        conn = Control.getConnection();
-        String id = spot.getIdSpot();
-        String nama=spot.getNamaSpot();
-        String deskripsi=spot.getDeskripsi();
-        try {
-            ps = conn.prepareStatement("update spotwisata set namaspot=?,deskripsi=? where id_spot=?");
-            ps.setString(1, nama);
-            ps.setString(2, deskripsi);
-            ps.setString(3, id);
-            ps.executeUpdate();
-            conn.commit();
-            spot.clear();
-            setDaftarSpot();
-            conn.commit();
-        } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
-
-        }
-    }
+//    public static void updateSpot(spotWisata spot) {
+//        Connection conn = null;
+//        PreparedStatement ps = null;
+//        conn = Control.getConnection();
+//        String id = spot.getIdSpot();
+//        String nama=spot.getNamaSpot();
+//        String deskripsi=spot.getDeskripsi();
+//        try {
+//            ps = conn.prepareStatement("update spotwisata set namaspot=?,deskripsi=? where id_spot=?");
+//            ps.setString(1, nama);
+//            ps.setString(2, deskripsi);
+//            ps.setString(3, id);
+//            ps.executeUpdate();
+//            conn.commit();
+//            spot.clear();
+//            setDaftarSpot();
+//            conn.commit();
+//        } catch (SQLException ex) {
+//            System.out.println(ex.getMessage());
+//
+//        }
+//    }
 
     public static void deleteSpot(String id) {
         Connection conn = null;
         PreparedStatement ps = null;
         conn = Control.getConnection();
         try {
-            ps = conn.prepareStatement("delete spotwisata where id=?");
+            ps = conn.prepareStatement("delete pemesanan where id_pemesanan=?");
             ps.setString(1, id);
             ps.executeUpdate();
             conn.commit();
             spotWisata.clear();
-            setDaftarSpot();
+            setDaftarPemesanan();
             conn.commit();
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
